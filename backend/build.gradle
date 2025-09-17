@@ -1,0 +1,11 @@
+plugins {
+    id 'java'
+}
+
+allprojects {
+    group = "com.project.zero"
+    version = "1.0.0"
+    repositories {
+        mavenCentral()
+    }
+}
