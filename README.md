@@ -5,7 +5,7 @@ Spring Boot microservice serving as the entry point of the project.
 
 ---
 ## Prerequisites
-* Java 17+
+* Java 21+
 * Gradle 8+
 ---
 
@@ -14,16 +14,11 @@ Spring Boot microservice serving as the entry point of the project.
 From the **root of the monorepo**:
 
 ```bash
-$ cd backend
-$ ./gradlew build
-$ java -jar entry-service/build/libs/entry-service-1.0.0.jar
+$ cd backend/entry-service
+$ docker build -t entry-service .
+$ docker run -p 8080:8080 entry-service:latest
 ```
 ---
-
-## Directly Run
-```bash
-$ ./gradlew :entry-service:bootRun
-```
 
 ## API
 * `GET /ping` → returns `"pong"`

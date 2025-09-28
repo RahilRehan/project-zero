@@ -12,3 +12,7 @@ dependencies {
 springBoot {
     mainClass = "com.project.zero.entry.EntryApplication"
 }
+
+repositories {
+    mavenCentral()
+}
